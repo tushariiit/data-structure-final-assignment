@@ -13,9 +13,9 @@ void merge(char a[], int l, int m, int r)
     for (j = 0; j < n2; j++)
         L2[j] = a[m + 1+ j];
 
-    i = 0; // Initial index of Ist subarray
-    j = 0; // Initial index of IInd subarray
-    k = l; // Initial index of merge subarray
+    i = 0;
+    j = 0;
+    k = l;
     while (i < n1 && j < n2)
     {
         if (L1[i] <= L2[j])
@@ -45,8 +45,6 @@ void merge(char a[], int l, int m, int r)
         k++;
     }
 }
-/* l is for left index and r is right index of the
-   sub-array of arr to be sorted */
 void mergesort(int a,int b,char ptr[])
 {
         if(a<b)
